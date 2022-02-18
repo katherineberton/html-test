@@ -62,8 +62,8 @@
         <h2>Order Form</h2>
 
         <form>
-            <p>Your name: <input type="text" name="name"></p>
-            <p>Who are we sending this to? <input type="text" name="recipient"></p>
+            <p><label for="customer_name">Your name</label><input type="text" name="name" id="customer_name"></p>
+            <p><label for="recipient_name">Who are we sending this to? </label><input type="text" name="recipient" id="recipient_name"></p>
             <p>Choose a melon: 
                 <select name=" melon">
                     <option value ="watermelon">Watermelon</option>
@@ -74,9 +74,9 @@
 
             <p>
                 When should we deliver?  
-                <input type="radio" name="time" value="am" > Morning
-                <input type="radio" name="time" value="pm" > Evening
-                <input type="radio" name="time" value="any" > Any time
+                <input type="radio" name="time" value="am" id="delivery_am"><label for="delivery_am">Morning</label>
+                <input type="radio" name="time" value="pm" id="delivery_evening" ><label for="delivery_evening">Evening</label>
+                <input type="radio" name="time" value="any" id ="delivery_any_time" ><label for = "delivery_any_time" >Any time</label>
             </p>
             
             <p>
@@ -84,7 +84,7 @@
             </p>
 
             <p>
-                Subscribe to our newsletter: <input type="checkbox" name="subscribe" value="yes">Yes</checkbox>
+                Subscribe to our newsletter: <input type="checkbox" name="subscribe" value="yes" id = "subscribe_box"><label for= "subscribe_box"> Yes </label>
             </p>
 
             <button type="submit">Submit Query</button>
